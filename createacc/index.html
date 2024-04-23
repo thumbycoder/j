@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+        /* Dark theme styles */
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        #keyForm, #keySuccessMessage {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        label, input[type="text"], input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #444444;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            background-color: #3e1b85;
+            color: #ffffff;
+        }
+        #vipFrame {
+            display: none; /* Initially hide the iframe */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 999999;
+        }
+    </style>
+    <title>User Registration</title>
+  <h1>User Registration</h1>
+</head>
+<body>
+    <h3>if you cannot use your phone number or you do not have one use another contact method and state what it is<h3>
+    <form action="register.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
